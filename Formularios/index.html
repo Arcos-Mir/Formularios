@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action=""><!-- atributo "placeholder"  nos permite borrar la palabra
+        "Nombre:" cuando el usuario de clik y escribe en el campo input para agregar un dato
+    al contrario de "value" que mantiene la palabra aun cuando el usuario da click
+en el campo input-->
+        <!-- "maxlength" nos permite establecer el numero de caracteres que 
+        ingresa el usuario-->
+        <!-- "size"cambia el tamaño del campo input aunque se puede cambiar con CSS-->
+        <!-- "required " es un validacion para que el usuario ingrese los datos requeridos
+        o envia una alerta para indicar que es necesario ingresar los datos de dicho campo-->
+        <!-- "readonly" este atributo es de solo lectura ya que no permite escribir en un input si se utiliza-->
+        <!-- "name" nos permite  guardar los datos o llamarlos cuando utilizamos base de datos-->
+        <!--"disabled" si se utiliza desabilita el campo-->
+        <input type="text" placeholder="Nombre:" maxlength="10" required>
+        <br>
+        <!--el input "email" nos permite recibir o recoger un correo-->
+        <input type="email" placeholder="correo:">
+        <br>
+        <!-- "cols="30" rows="10" nos permiten agregar el ancho y el alto pero casi no se utiliza-->
+        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="mensaje"></textarea>
+        <br>
+        <label for="pais">Pais:</label><!-- el for y el id tiene que estar enlazado-->
+        <select name="pais" id="pais"><!--es como un combo box o selec para elegir de varias opciones-->
+            <option value="Mexico">Mexico</option>
+            <option value="españa">España</option>
+            <option value="argentina">Argentina</option>
+        </select>
+        <input type="submit" value="Enviar">
+        <!-- input de tipo radio se selecciona uno u otro pero no ambos-->
+        <input type="radio" name="genero" value="hombre" id="hombre"><label for="hombre">Hombre</label>
+        <input type="radio" name="genero" value="mujer" id="mujer"><label for="mujer">Mujer</label>
+        <br>
+
+        <input type="checkbox" name="terminos" id="terminos">Terminos y Condiciones
+    </form>
+</body>
+</html>
